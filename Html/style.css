@@ -1,0 +1,371 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+/*导航区开始 NAV AREA START*/
+
+
+/*导航栏全局设置 NavBar OverAll Settings*/
+.navbar{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	position:relative;
+	min-height:90px;
+	margin-bottom:0px;
+	border:0px solid transparent;
+
+}
+
+.navbar-inverse{
+	background-color:#131313;
+	border-color:#131313;
+	border-radius:0px;
+}
+
+/*Essantial*/
+
+.navbar>.container .navbar-brand,.navbar>.container-fluid .navbar-brand {
+    margin-left:-15px;
+}
+
+.navbar>.container .navbar-brand,.navbar>.container-fluid.navbar-brand{
+	margin-left:-15px;
+}
+
+/*控制LOGO相对位置（以全局为坐标） LOGO Relative Position Control*/
+.container,.container-fluid {
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+	box-sizing:border-box;
+}
+
+/*控制LOGO绝对位置（以自身为坐标）LOGO Absolute Position Control*/
+.navbar-brand{
+	font-family: Agency FB;
+	color:#fff;
+	float:left;
+	height:50px;
+	font-size:46px;
+	line-height:15px;
+	padding:15px;
+	margin:24px;
+}
+
+@media screen and (max-width: 1080px){
+.navbar-brand{
+	font-size:28px;
+}
+	
+}
+
+/*去除LOGO处下划线 Erase Underline*/
+.navbar-header>a{
+	text-decoration:none;
+	
+}
+
+/*控制全局菜单 Menu OverAll Settings*/ 
+/*包含底部菜单 Including Footer Settings*/
+.nav{    
+	padding-left:0;
+	margin-bottom:0;
+	list-style:none;
+}
+
+
+
+/*菜单控制 Menu Settings*/
+.nav>li{
+	position:relative;
+	display:block;
+}
+
+.nav>li>a{
+	color:#c1c1c1;
+	position:relative;
+	display:block;
+	padding:10px 15px;
+	text-decoration:none;
+	margin-top:25px;
+}
+
+.nav>li>a:hover{
+	color:#f0f0f0;
+}
+
+/*控制菜单相对位置 MENU Relative Position Control*/
+.navbar-nav{
+	margin:0;
+}
+
+.navbar-nav>li{
+	float:left;
+}
+
+/*控制菜单绝对位置 MENU Absolute Position Control*/
+.navbar-nav>li>a{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+/*控制菜单位置 Navbar Position Control*/
+.navbar-right{
+	float:right!important;
+	margin-right:65px;
+}
+.navbar-right .dropdown-menu{
+	right:0;
+	left:auto;
+}
+
+.navbar-right .dropdown-menu-left {
+    right:auto;
+    left:0;
+}
+
+.navbar-right~.navbar-right{
+	margin-right:0;
+}
+
+/*导航区结束 NAV AREA END*/
+
+/*幻灯区开始 SLIDE AREA START*/
+
+/*幻灯片设置 Slide Background Settings*/
+.index_slide{
+	position:relative;
+	top:0px;
+	width:auto;
+	height:600px;
+	margin:0 auto;
+	padding:0;
+	opacity: 1.5;
+	/*background-image: url("sbg.jpg");*/
+}
+
+.slide_content{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:220%;
+	font-weight:bold;
+	line-height:auto;
+	leeter-spacing:-2px;
+	text-align:left ;
+    padding-top:420px;
+	padding-left:245px;
+	color:#f5f5f5;
+}
+
+
+
+
+/*幻灯区结束 SLIDE AREA END*/
+
+/*搜索栏开始 SEARCH BAR START*/
+.sbar{
+	position:relative;
+	text-align:left;
+	margin-top:40px;
+
+}
+
+.sbar>figure{
+	width:50%;
+	height:50px;
+	background:#f0f0f0;
+	border:hiden #f0f0f0;
+	box-shadow:0 1px 3px #bebebe;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:15px;
+	
+}
+
+.sbar>figure>figcaption{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#d2d2d2;
+	line-height:13px;
+	padding:20px;
+
+}
+
+@media screen and (max-width:1080px){
+.sbar>figure>figcaption{
+		font-size:10px;
+}
+}
+
+.sbtn{
+	width:2.5%;
+	height:50px;
+	position:absolute;
+	padding-left:1px;
+	background:#f0f0f0;
+	border:hiden #f0f0f0;
+	box-shadow:0 1px 3px #bebebe;
+}
+
+/*搜索栏结束 SEARCH BAR END*/
+
+/*瀑布流开始 COLUMNS START*/
+
+.columns{
+	width:90%;
+	max-width:1400px;
+	margin:30px auto;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.columns>figure {
+	background:#f0f0f0;
+	border:hidden #f0f0f0;
+	box-shadow:0 2px 12px #bebebe;
+	margin: 0 8px 55px;
+	padding-bottom:10px;
+	display: inline-block;
+	colum-break-inside: avoid;
+}
+
+.columns>figure>img {
+	width:100%;
+	height:auto;
+	padding-bottom:15px;
+	margin-bottom:5px;
+}
+
+.columns>figure>figcaption {
+	font-size: 6 em;
+	color:#444;
+	line-height:1.5;
+	padding:15px;
+}
+
+.columns>figure>figcaption>a {
+	font-size: 9 em;
+}
+
+/*瀑布流结束 COLUMNS END*/
+
+/*显示更多开始 SHOW MORE START*/
+
+.smore{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:center;
+	font-size:14px;
+}
+
+.smore>figure{
+	width:20%;
+	height:30px;
+    background:#f0f0f0;
+	board:hidden;
+	box-shadow:0 2px 12px #bebebe;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:15px;
+	margin-bottom:35px;
+}
+
+.smore>figure>figcaption{  
+	color:#d2d2d2;
+	line-height:13px;
+	padding:10px;
+}
+
+@media screen and (max-height:1080px){
+.smore>figure>figcaption{
+	line-height:8px;
+	font-size:10px;
+}
+
+}
+
+/*显示更多结束 SHOW MORE END*/
+
+/*底部开始 FOOTER START*/
+
+.footer {
+	background-color:#222;
+	board:hidden;
+	border-color:#080808;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	position:relative;
+	min-height:130px;
+	margin-bottom:0px;
+}
+
+
+.footer-social{
+	float:left!important;
+	position:relative;
+	margin-right:65px;
+	margin-top:25px;
+	z-index:1;
+}
+
+
+.footer-social>li{
+	float:right;
+	 list-style:none;	
+}
+
+
+.footer-social>li>a>img {
+	position:relative;
+	width:50px;
+	height:50px;
+	list-style:none;
+}
+
+
+.footer-right{
+	float:right!important;
+	margin-right:15px;
+}
+
+
+.footer-right>li{
+	float:left;
+}
+
+
+.footer-right>li>a{
+	padding-top:15px;
+	padding-bottom:15px;
+
+}
+
+
+.fnav{
+	position:relative;
+	text-decoration:none;
+	list-style:none;
+}
+
+
+.fnav>li{
+	position:relative;
+	display:block;
+}
+
+
+.fnav>li>a{
+	color:#fff;
+	position:relative;
+	display:block;
+	padding:10px 15px;
+	text-decoration:none;
+	margin-top:25px;
+}
+
+
+.fnav>li>a:hover{
+	color:#f0f0f0;
+}
+
+
+
+
+
+/*底部结束 FOOTER END*/
