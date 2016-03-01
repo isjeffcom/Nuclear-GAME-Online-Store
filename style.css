@@ -1,6 +1,16 @@
 *{
 	margin:0;
 	padding:0;
+
+}
+
+body{
+	background-color:#222;
+
+}
+
+h1{
+    color:#b5b5b5;
 }
 
 /*导航区开始 NAV AREA START*/
@@ -114,6 +124,7 @@
 .navbar-right{
 	float:right!important;
 	margin-right:65px;
+	margin-top:-90px;
 }
 .navbar-right .dropdown-menu{
 	right:0;
@@ -173,9 +184,8 @@
 .sbar>figure{
 	width:50%;
 	height:50px;
-	background:#f0f0f0;
-	border:hiden #f0f0f0;
-	box-shadow:0 1px 3px #bebebe;
+	background:#444;
+	box-shadow:0 1px 3px #333;
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:15px;
@@ -184,7 +194,7 @@
 
 .sbar>figure>figcaption{
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-	color:#d2d2d2;
+	color:#666;
 	line-height:13px;
 	padding:20px;
 
@@ -215,12 +225,15 @@
 	max-width:1400px;
 	margin:30px auto;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+
 }
 
+
+
 .columns>figure {
-	background:#f0f0f0;
-	border:hidden #f0f0f0;
-	box-shadow:0 2px 12px #bebebe;
+	background:#333;
+	border:hidden #333;
+	box-shadow:0 2px 12px #222;
 	margin: 0 8px 55px;
 	padding-bottom:10px;
 	display: inline-block;
@@ -234,9 +247,24 @@
 	margin-bottom:5px;
 }
 
+.columns>figure:hover {
+    
+	/*Animtation Timer*/
+	-webkit-transition: all 150ms ease-in-out;
+	-moz-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+	
+	/*Enlarge Animation*/
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+
+}
+
+
 .columns>figure>figcaption {
 	font-size: 6 em;
-	color:#444;
+	color:#999;
 	line-height:1.5;
 	padding:15px;
 }
@@ -258,9 +286,9 @@
 .smore>figure{
 	width:20%;
 	height:30px;
-    background:#f0f0f0;
+    background:#444;
 	board:hidden;
-	box-shadow:0 2px 12px #bebebe;
+	box-shadow:0 2px 12px #333;
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:15px;
@@ -268,7 +296,7 @@
 }
 
 .smore>figure>figcaption{  
-	color:#d2d2d2;
+	color:#666;
 	line-height:13px;
 	padding:10px;
 }
@@ -286,7 +314,7 @@
 /*底部开始 FOOTER START*/
 
 .footer {
-	background-color:#222;
+	background-color:#111;
 	board:hidden;
 	border-color:#080808;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
