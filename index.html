@@ -3,57 +3,98 @@
     <head>
 	    <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-	    <title>Porthampton Live -- Jeff's HTML5 RES Demo</title>
-		<link rel="stylesheet" href="./style.css">
+	    <title>Nuclear Game Store</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/slider.css">
+		<script src="./js/jquery.js"></script>
+		<script src="./js/cart.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+
 	</head>
 	
 	<body>
 	
 	<!--NAV START-->
-	
+
 	    <nav class="navbar navbar-inverse" >
+
 		    <div class="container-fluid">
 		        <div class = "navbar-header">
-			        <!--a class="navbar-brand" href="#">Porthampton Live</a-->
-					<img src="./img/logo.png" height="90px">
+					<img class="logo" src="./img/logo.png" height="90px">
 			    </div>
 			</div> 
 			
-			<div>
+			<!--div>
 			    <ul class="nav navbar-nav navbar-right">
 				    <li><a href="#"><span class="nav menu"></span>HOME</a></li>
 					<li><a href="#"><span class="nav menu"></span>CHANNELS</a></li>
 					<li><a href="#"><span class="nav menu"></span>SIGN IN</a></li>
 					<li><a href="#"><span class="nav menu"></span>SIGN UP</a></li>
 				</ul>
-			</div>
+			</div-->
 		</nav>
 		
 		<!--NAV END-->
 		
 		<!--SLIDE START-->
 		
-		<div class="index_slide">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		
-			<section class="index-video" data-vidbg-bg="mp4: media/mp4_video.mp4, webm: media/webm_video.webm, poster: media/fallback.jpg" data-vidbg-options="loop: true, muted: true, overlay: false">
-			</section>
+	        <!-- Indicators -->
+	        <ol class="carousel-indicators">
 			
-			<div class="slide_content">
-			
-			    <a>ASSASSIN'S CREED SYNDICATE</a></br>
-			    <a>ENJOY THE BEST IN 2015</a>
-			
-			</div>
-			
-			<script src="./js/jquery.js" type="text/javascript"></script>
-            <script src="js/vidbg.js"></script>
-			
-		</div>
+	            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	            <li data-target="#myCarousel" data-slide-to="1"></li>
+	            <li data-target="#myCarousel" data-slide-to="2"></li>
+	            <li data-target="#myCarousel" data-slide-to="3"></li>
+				
+	        </ol>
+	
+	        <!-- Wrapper for slides -->
+	        <div class="carousel-inner" role="listbox">
 		
+	            <div class="item active">
+				
+	                <img src="./img/silder/01.jpg" alt="Chania">
+					
+	            </div>
+	
+	            <div class="item">
+				
+	                <img src="./img/silder/02.jpg" alt="Chania">
+					
+	            </div>
+	
+	            <div class="item">
+				
+	                <img src="./img/silder/03.jpg" alt="Flower">
+					
+	            </div>
+	
+	            <div class="item">
+				
+	                <img src="./img/silder/04.jpg" alt="Flower">
+					
+	            </div>
+			
+	        </div>
+	
+	        <!-- Left and right controls -->
+	        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			
+	            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				
+	        </a>
+		
+	        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			
+	            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				
+	        </a>
+		
+	    </div>
 		
 
-
-		
 		<!--SLIDE END-->
 		
 		<!--SEARCH BAR START-->
@@ -61,7 +102,7 @@
 		<div class="sbar">
 		    <figure>
 			    <figcaption>
-			      <strong>SEARCH IN NURCLEAR GAME</strong>
+			      		<a href="./cart.html" target="_blank"><img src="./img/cart.png" height="50px"></a>
                 </figcaption>
 			</figure>
 		</div>
@@ -83,82 +124,210 @@
 		    <br>
 		    <figure>
 			    <img src="./img/01.jpg">
-			    <figcaption><a>The Division</a> <br> from Ubisoft <br> 49.99£ | 10 mouth ago</figcaption>
+			    <figcaption> 
+			    	
+			    	<a class="name">The Division</a> <br> 
+			    	<a class="detail"> from Ubisoft </a> <br> 
+			    	<a class="price">49.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption> 
 			</figure>
 			
 			<figure>
 			    <img src="./img/02.jpg">
-			    <figcaption>Rainbow Six Siege<br> from Ubisoft <br> 39.99£ | 1 week ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">Call of Duty</a> <br> 
+			    	<a class="detail">A FPS game famous all around the world </a> <br> 
+			    	<a class="price">29.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+		
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/03.jpg">
-			    <figcaption>For Honor <br> from Ubisoft <br> 24.49£ | 10 days ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">Minecraft</a> <br> 
+			    	<a class="detail">A Pixel game famous all around the world</a> <br> 
+			    	<a class="price">19.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/04.jpg">
-			    <figcaption>The Crew <br> from Ubisoft <br> 19.99£ | 10 mouth ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">CSGO</a> <br> 
+			    	<a class="detail"> Counter-Strike: Global Of...</a> <br> 
+			    	<a class="price">7.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/01.jpg">
-			    <figcaption>Year in Search 2014 <br> from Google <br> 252643 views | 10 mouth ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">Elite Dangerous</a> <br> 
+			    	<a class="detail"> A Space Venture Game </a> <br> 
+			    	<a class="price">59.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/02.jpg">
-			    <figcaption>EI Traductor de G...<br> from Google <br> 194113 views | 1 week ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">GTAOL</a> <br> 
+			    	<a class="detail"> Grand Theft Auto V is a...</a> <br> 
+			    	<a class="price">69.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/03.jpg">
-			    <figcaption>OnHub: A Closer L.... <br> from Google <br> 186323 views | 10 days ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">The Division</a> <br> 
+			    	<a class="detail"> from Ubisoft </a> <br> 
+			    	<a class="price">49.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/04.jpg">
-			    <figcaption>September Event <br> from Google <br> 143255 views | 10 mouth ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">The Division</a> <br> 
+			    	<a class="detail"> from Ubisoft </a> <br> 
+			    	<a class="price">49.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/01.jpg">
-			    <figcaption>Year in Search 2014 <br> from Google <br> 252643 views | 10 mouth ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">The Division</a> <br> 
+			    	<a class="detail"> from Ubisoft </a> <br> 
+			    	<a class="price">49.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/02.jpg">
-			    <figcaption>EI Traductor de G...<br> from Google <br> 194113 views | 1 week ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">The Division</a> <br> 
+			    	<a class="detail"> from Ubisoft </a> <br> 
+			    	<a class="price">49.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/03.jpg">
-			    <figcaption>OnHub: A Closer L.... <br> from Google <br> 186323 views | 10 days ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">The Division</a> <br> 
+			    	<a class="detail"> from Ubisoft </a> <br> 
+			    	<a class="price">49.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/04.jpg">
-			    <figcaption>September Event <br> from Google <br> 143255 views | 10 mouth ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">The Division</a> <br> 
+			    	<a class="detail"> from Ubisoft </a> <br> 
+			    	<a class="price">49.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/01.jpg">
-			    <figcaption>Year in Search 2014 <br> from Google <br> 252643 views | 10 mouth ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">The Division</a> <br> 
+			    	<a class="detail"> from Ubisoft </a> <br> 
+			    	<a class="price">49.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/02.jpg">
-			    <figcaption>EI Traductor de G...<br> from Google <br> 194113 views | 1 week age</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">The Division</a> <br> 
+			    	<a class="detail"> from Ubisoft </a> <br> 
+			    	<a class="price">49.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/03.jpg">
-			    <figcaption>OnHub: A Closer L.... <br> from Google <br> 186323 views | 10 days ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">The Division</a> <br> 
+			    	<a class="detail"> from Ubisoft </a> <br> 
+			    	<a class="price">49.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			<figure>
 			    <img src="./img/04.jpg">
-			    <figcaption>September Event <br> from Google <br> 143255 views | 10 mouth ago</figcaption>
+			    <figcaption>
+			    	
+			    	<a class="name">The Division</a> <br> 
+			    	<a class="detail"> from Ubisoft </a> <br> 
+			    	<a class="price">49.99</a><a> £| 10 mouth ago</a> <br>
+			    	<input type="text" class="qty" value="1" />
+			    	<button class="add">add</button>
+			    	
+			    </figcaption>
 			</figure>
 			
 			
