@@ -132,8 +132,7 @@
 				
 				//Display Total Price
 				$(".totalPrice").html("All Price: " + TPrice + " $ ");
-				
-							
+						
 				if(names !== null){
 				   
 					//Button create function
