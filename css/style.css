@@ -281,6 +281,70 @@ button{
 
 /*瀑布流开始 COLUMNS START*/
 
+
+.name{
+	
+	color:#fff;
+	font-size:20px;
+	
+}
+
+.columns_index{
+	
+	width:100%;
+	max-width:1400px;
+	margin:30px auto;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align:center;
+
+}
+
+.columns_index>figure{
+	
+	background:#333;
+	border:hidden #333;
+	box-shadow:0 2px 12px #222;
+	margin: 0 8px 55px;
+	padding-bottom:10px;
+	display: inline-block;
+	colum-break-inside: avoid;
+}
+
+.columns_index>figure>img{
+	
+    height: 180px !important;
+    width: 320px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+.columns_index>figure:hover {
+    
+	/*Animtation Timer*/
+	-webkit-transition: all 150ms ease-in-out;
+	-moz-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+	
+	/*Enlarge Animation*/
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+
+}
+
+
+.columns_index>figure>figcaption {
+	font-size: 6 em;
+	color:#999;
+	line-height:1.5;
+	padding:15px;
+}
+
+.columns_index>figure>figcaption>a {
+	font-size: 9 em;
+}
+
+
 .columns{
 	
 	width:100%;
@@ -290,7 +354,9 @@ button{
 
 }
 
-
+.columns>h1{
+	color:#fff;
+}
 
 .columns>figure {
 	background:#333;
@@ -303,10 +369,10 @@ button{
 }
 
 .columns>figure>img {
-	width:100%;
-	height:auto;
-	padding-bottom:15px;
-	margin-bottom:5px;
+    height: 180px !important;
+    width: 320px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .columns>figure:hover {
@@ -379,6 +445,91 @@ button{
 
 /*显示更多结束 SHOW MORE END*/
 
+/*INFO FORM START*/
+
+.infoForm{
+	margin-top:32px;
+	margin-left:62px;
+	font-size:12px;
+}
+
+.infoTitle{
+	margin-top:82px;
+	margin-left:62px;
+	font-size:42px;
+	color:#41ED2D;
+}
+.infoTitlePay{
+	margin-top: 82px;
+	margin-bottom: 82px;
+    font-size: 42px;
+	color:#41ED2D;
+}
+	
+.infoItem>input{
+	background-color: #222;
+    color: #999;
+    width: 420px;
+	height:40px;
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ffffff;
+	margin-top:12px;
+    margin-bottom: 12px;
+}
+
+.infoItem{
+
+	margin-bottom:32px;
+
+}
+
+.finalInfo{
+
+	margin-top:52px;
+	margin-left:62px;
+
+}
+
+.finalInfo>a{
+
+	color:#ECECEC;
+	font-size:24px;
+
+}
+
+.finalInfo>p{
+	color:#58c271;
+	font-size:24px;
+}
+
+.pppayBtn{
+	margin-left:62px;
+}
+
+.pppayBtn:hover{
+	
+	/*Animtation Timer*/
+	-webkit-transition: all 100ms ease-in-out;
+	-moz-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+	
+	/*Enlarge Animation*/
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.cardpayBtn{
+	margin-top:20px;
+	margin-left:62px;
+	margin-bottom:20px;
+}
+
+/*INFO FORM END*/
 
 /*底部开始 FOOTER START*/
 
@@ -413,6 +564,7 @@ button{
 	width:50px;
 	height:50px;
 	list-style:none;
+	margin-left:10px;
 }
 
 

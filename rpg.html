@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	    <title>Nuclear Game Store</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/slider.css">
+		<script src="./js/jquery.js"></script>
+		<script src="./js/cart.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+
+	</head>
+	
+	<body>
+	
+	<!--NAV START-->
+
+	    <nav class="navbar navbar-inverse" >
+
+		    <div class="container-fluid">
+		        <div class = "navbar-header">
+					<a href="./index.html"><img class="logo" src="./img/logo.png" height="90px"></a>
+			    </div>
+			</div> 
+			
+			<!--div>
+			    <ul class="nav navbar-nav navbar-right">
+				    <li><a href="#"><span class="nav menu"></span>HOME</a></li>
+					<li><a href="#"><span class="nav menu"></span>CHANNELS</a></li>
+					<li><a href="#"><span class="nav menu"></span>SIGN IN</a></li>
+					<li><a href="#"><span class="nav menu"></span>SIGN UP</a></li>
+				</ul>
+			</div-->
+		</nav>
+		
+		<!--NAV END-->
+		
+		<!--SLIDE START-->
+		
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		
+	        <!-- Indicators -->
+	        <ol class="carousel-indicators">
+			
+	            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	            <li data-target="#myCarousel" data-slide-to="1"></li>
+	            <li data-target="#myCarousel" data-slide-to="2"></li>
+	            <li data-target="#myCarousel" data-slide-to="3"></li>
+				
+	        </ol>
+	
+	        <!-- Wrapper for slides -->
+	        <div class="carousel-inner" role="listbox">
+		
+	            <div class="item active">
+				
+	                <img src="./img/silder/01.jpg" alt="Chania">
+					
+	            </div>
+	
+	            <div class="item">
+				
+	                <img src="./img/silder/02.jpg" alt="Chania">
+					
+	            </div>
+	
+	            <div class="item">
+				
+	                <img src="./img/silder/03.jpg" alt="Flower">
+					
+	            </div>
+	
+	            <div class="item">
+				
+	                <img src="./img/silder/04.jpg" alt="Flower">
+					
+	            </div>
+			
+	        </div>
+	
+	        <!-- Left and right controls -->
+	        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			
+	            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				
+	        </a>
+		
+	        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			
+	            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				
+	        </a>
+		
+	    </div>
+		
+
+		<!--SLIDE END-->
+		
+<!--SEARCH BAR START-->
+		
+		<div class="sbar">
+		    <figure>
+			    <figcaption>
+			      		<a href="./cart.html" target="_blank"><img src="./img/cart.png" height="50px"></a>
+			      				
+						<div class="cart" style="color: #fff">
+						
+						    </br>
+							<table>
+								<a class="cartItem">Cart Item</br></br></a>
+								<!--p class="cartPrice">none</p-->
+								<!--a>Total Price</a--><a class="totalPrice">none</a>
+								</br>
+								<button class="updateCart">Enable Remove</button><a> </a>
+								<button class="clearCart">Clear Cart</button>
+								</br></br>
+								<div class="rbtn"></div>
+								
+								<!--form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="C6L6D3MA964S2">
+									<input class="continue" type="image" src="./img/checkout.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+								</form-->
+								<a href="./index.html"><input type="image" src="./img/home.png" class="homepage" alt="Back2Home"></a>
+								<a href="./info.html"><input type="image" src="./img/checkout.png" class="continue" alt="CheckOut"></a>
+							</table>
+
+						</div>
+		
+                </figcaption>
+			</figure>
+		</div>
+		
+		<!--<div class="sbtn">
+			<figure>
+			    <img src ="./img/s.png">
+			</figure>
+		</div>-->
+		
+		<!--SEARCH BAR END->
+		<!--SEARCH BAR END->
+		
+		
+		
+		<!--COLUMN START-->
+		
+		<div class="columns">
+		    <h1>RPG - Role Playing Game</h1>
+		    <br>
+		    <figure>
+			    <img src="./img/witcher3.jpg">
+			    <figcaption> 
+			    	
+			    	<a class="name">The Witcher 3</a> <br> 
+			    	<a class="detail"> Geralt the monster slayer</a> <br> 
+			    	<a>£</a><a class="price">49.99</a><a> Released: 18th May 2015</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption> 
+			</figure>
+			
+			<figure>
+			    <img src="./img/GTA5.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Grand Theft Auto V</a> <br> 
+			    	<a class="detail">A game famous all around the world </a> <br> 
+			    	<a>£</a><a class="price">39.99</a><a> Released: 14th April 2015</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+		
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/darksouls3.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Dark Souls III</a> <br> 
+			    	<a class="detail">Embrace the darkness</a> <br> 
+			    	<a>£</a><a class="price">39.99</a><a> Released: 11th April 2016</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/fallout4.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Fallout 4</a> <br> 
+			    	<a class="detail">A world set in post nuclear fallout</a> <br> 
+			    	<a>£</a><a class="price">39.99</a><a> Released: 10th November 2015</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/01.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Tom Clancy's The Division TM</a> <br> 
+			    	<a class="detail">A city without law and order</a> <br> 
+			    	<a>£</a><a class="price">39.99</a><a> Released: 7th March 2016</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/borderlands2.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Borderlands 2</a> <br> 
+			    	<a class="detail"> The ultimate Vault Hunters</a> <br> 
+			    	<a>£</a><a class="price">19.99</a><a> Released: 20th September 2016</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/max.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Mad Max</a> <br> 
+			    	<a class="detail"> Dust and death </a> <br> 
+			    	<a>£</a><a class="price">34.99</a><a> Released: 1st September 2015</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/primal.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Far Cry Primal</a> <br> 
+			    	<a class="detail"> When cave men roamed the Earth</a> <br> 
+			    	<a>£</a><a class="price">39.99</a><a> Released: 1st March 2016</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/diablo.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Diablo Reaper of Souls</a> <br> 
+			    	<a class="detail">Ultimate evil</a> <br> 
+			    	<a>£</a><a class="price">49.99</a><a> Released: 15th May 2012</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/deadisland1.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Dead Island 2</a> <br> 
+			    	<a class="detail"> The undead have risen </a> <br> 
+			    	<a>£</a><a class="price">19.99</a><a> Released: 6th September 2011</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/payday.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Pay Day 2</a> <br> 
+			    	<a class="detail"> The hei$t </a> <br> 
+			    	<a>£</a><a class="price">14.99</a><a> Released: 13th August 2013</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/assassin.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Assassin's Creed Syndicate</a> <br> 
+			    	<a class="detail"> Industrial Revolution. London 1868</a> <br> 
+			    	<a>£</a><a class="price">49.99</a><a> Released: 19th November 2015</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/fable.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Fable 3</a> <br> 
+			    	<a class="detail">Choose your path</a> <br> 
+			    	<a>£</a><a class="price">26.99</a><a> Released: 12th September 2014</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/masseffect.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Mass Effect 3</a> <br> 
+			    	<a class="detail"> An Alien take over</a> <br> 
+			    	<a>£</a><a class="price">29.99</a><a> Released: 23rd August 2015</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/lostplanet.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Lost Planet 3</a> <br> 
+			    	<a class="detail">A world in darkness</a> <br> 
+			    	<a>£</a><a class="price">19.99</a><a> Released: 5th September 2014</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/shadow.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Shadow of Mordor</a> <br> 
+			    	<a class="detail">The battle for Middle Earth has begun</a> <br> 
+			    	<a>£</a><a class="price">29.99</a><a> Released: 30th September 2014</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			
+			
+			
+			
+		</div>
+		<!--COLUMN END-->
+		
+		<!--SHOW MORE BTN START-->
+		
+		<div class="smore">
+		    <figure>
+			    <figcaption><b>···SHOW MORE···</b></figcaption>
+			</figure>
+		</div>
+		
+		
+		
+		<!--SHOW MORE BTN END-->
+		
+		<!--FOOTER START-->
+		
+	    <div class="footer" >
+		    
+			<div class="footer-social">
+			    <li><a href="https://twitter.com/" target="_blank"><img src="./img/twitter.png" alt="Link to Twitter"/></a></li>
+				<li><a href="https://en-gb.facebook.com/"target="_blank"><img src="./img/facebook.png" alt="Link to Facebook"/></a></li>
+				<li><a href="https://www.instagram.com/"target="_blank"><img src="./img/instagram.png" alt="Link to Instagram"/></a></li>
+			</div>
+			
+		    <div class="footer container-fluid">
+				<ul class="fnav footer-right">
+				    <li><a href="#"><span class="fnav menu"></span>About us</a></li>
+					<li><a href="#"><span class="fnav menu"></span>Team</a></li>
+					<li><a href="#"><span class="fnav menu"></span>Report</a></li>
+					<li><a href="#"><span class="fnav menu"></span>Nuclear Games 2014-2016</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<!--FOOTER END-->
+		
+		
+	</body>
+
+</html>

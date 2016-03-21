@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	    <title>Nuclear Game Store</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/slider.css">
+		<script src="./js/jquery.js"></script>
+		<script src="./js/cart.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+
+	</head>
+	
+	<body>
+	
+	<!--NAV START-->
+
+	    <nav class="navbar navbar-inverse" >
+
+		    <div class="container-fluid">
+		        <div class = "navbar-header">
+					<a href="./index.html"><img class="logo" src="./img/logo.png" height="90px"></a>
+			    </div>
+			</div> 
+			
+			<!--div>
+			    <ul class="nav navbar-nav navbar-right">
+				    <li><a href="#"><span class="nav menu"></span>HOME</a></li>
+					<li><a href="#"><span class="nav menu"></span>CHANNELS</a></li>
+					<li><a href="#"><span class="nav menu"></span>SIGN IN</a></li>
+					<li><a href="#"><span class="nav menu"></span>SIGN UP</a></li>
+				</ul>
+			</div-->
+		</nav>
+		
+		<!--NAV END-->
+		
+		<!--SLIDE START-->
+		
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		
+	        <!-- Indicators -->
+	        <ol class="carousel-indicators">
+			
+	            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	            <li data-target="#myCarousel" data-slide-to="1"></li>
+	            <li data-target="#myCarousel" data-slide-to="2"></li>
+	            <li data-target="#myCarousel" data-slide-to="3"></li>
+				
+	        </ol>
+	
+	        <!-- Wrapper for slides -->
+	        <div class="carousel-inner" role="listbox">
+		
+	            <div class="item active">
+				
+	                <img src="./img/silder/01.jpg" alt="Call of Duty">
+					
+	            </div>
+	
+	            <div class="item">
+				
+	                <img src="./img/silder/02.jpg" alt="Assassins Creed">
+					
+	            </div>
+	
+	            <div class="item">
+				
+	                <img src="./img/silder/03.jpg" alt="League of Legends">
+					
+	            </div>
+	
+	            <div class="item">
+				
+	                <img src="./img/silder/04.jpg" alt="Grand Theft Auto">
+					
+	            </div>
+			
+	        </div>
+	
+	        <!-- Left and right controls -->
+	        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			
+	            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				
+	        </a>
+		
+	        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			
+	            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				
+	        </a>
+		
+	    </div>
+		
+
+		<!--SLIDE END-->
+		
+		<!--SEARCH BAR START-->
+		
+		<div class="sbar">
+		    <figure>
+			    <figcaption>
+			      		<a href="./cart.html" target="_blank"><img src="./img/cart.png" height="50px"></a>
+			      				
+						<div class="cart" style="color: #fff">
+						
+						    </br>
+							<table>
+								<a class="cartItem">Cart Item</br></br></a>
+								<!--p class="cartPrice">none</p-->
+								<!--a>Total Price</a--><a class="totalPrice">none</a>
+								</br>
+								<button class="updateCart">Enable Remove</button><a> </a>
+								<button class="clearCart">Clear Cart</button>
+								</br></br>
+								<div class="rbtn"></div>
+								
+								<!--form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="C6L6D3MA964S2">
+									<input class="continue" type="image" src="./img/checkout.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+								</form-->
+								<a href="./index.html"><input type="image" src="./img/home.png" class="homepage" alt="Back2Home"></a>
+								<a href="./info.html"><input type="image" src="./img/checkout.png" class="continue" alt="CheckOut"></a>
+							</table>
+
+						</div>
+		
+                </figcaption>
+			</figure>
+		</div>
+		
+		<!--<div class="sbtn">
+			<figure>
+			    <img src ="./img/s.png">
+			</figure>
+		</div>-->
+		
+		<!--SEARCH BAR END->
+		
+		
+		
+		<!--COLUMN START-->
+		
+		<div class="columns">
+		    <h1>MMO - Massively Multiplayer Online </h1>
+		    <br>
+			
+			
+			<figure>
+			    <img src="./img/WoW.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">World Of Warcraft </a> <br> 
+			    	<a class="detail"> Start your adventure here! </a> <br> 
+			    	<a>£ </a><a class="price">9.99</a><a> Released 24th November 2004</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/WoWBurningCrusade.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name"> WoW  The burning crusade</a> <br> 
+			    	<a class="detail"> The first expansion pack is here!</a> <br> 
+			    	<a>£ </a><a class="price">4.99</a><a> Released: 16th January 2007</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/WoWtheWrathofLichKing.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">WoW The Wrath of Lich King</a> <br> 
+			    	<a class="detail">  </a> Join Lich King and his undead minions! <br> 
+			    	<a>£ </a><a class="price">4.99</a><a> Released 13th November 2008</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+		    <figure>
+			    <img src="./img/MistsofPandaria.jpg">
+			    <figcaption> 
+			    	
+			    	<a class="name">WoW  Mists of Pandaria </a> <br> 
+			    	<a class="detail">Enter the world of Pandaria! </a> <br> 
+			    	<a>£ </a><a class="price">4.99</a><a> Released: 25th September 2012</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption> 
+			</figure>
+			
+			<figure>
+			    <img src="./img/WoWCataclysm.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">WoW Cataclysm</a> <br> 
+			    	<a class="detail"> A cataclysm is coming to Azeroth!</a> <br> 
+			    	<a>£ </a><a class="price">4.99</a><a> Released: 7th December 2010</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/WowWarlords.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name"> WoW  World of Draenor</a> <br>
+			    	<a class="detail">Enter the new world of Draenor!</a> <br> 
+			    	<a>£ </a><a class="price">29.99</a><a> Released: 13th November 2014</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+		
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/WowLegion.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name"> WoW  Legion</a> <br> 
+			    	<a class="detail">The 6th Expansion pack!</a> <br> 
+			    	<a>£ </a><a class="price">34.99</a><a> Released: 12th September 2016</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			
+			
+			
+			<figure>
+			    <img src="./img/Tera.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Tera</a> <br> 
+			    	<a class="detail"> Tera is a 3D fantasy themed multiplayer! </a> <br> 
+			    	<a>£ </a><a class="price">8.99</a><a> Released: 25th January 2011</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/ElderScrolls.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Elder Scrolls</a> <br> 
+			    	<a class="detail"> Embark on Open world quests! </a> <br> 
+			    	<a>£ </a><a class="price">19.99</a><a> Released: 4th April 2014</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/Dota.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Dota 2 </a> <br> 
+			    	<a class="detail"> Multiplayer online battle arena! </a> <br> 
+			    	<a>£ </a><a class="price">9.99</a><a> Released: 9th July 2013 </a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/GuildWars2.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Guild Wars 2 </a> <br> 
+			    	<a class="detail"> A multiplayer online role-playing game!  </a> <br> 
+			    	<a>£ </a><a class="price">24.99</a><a> Released: 28th august 2012</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/Starcraft.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Starcraft</a> <br> 
+			    	<a class="detail">  </a>Wings of Libertya a military fiction!<br> 
+			    	<a>£ </a><a class="price">11.99</a><a> Released: 27th July 2010</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/destiny.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Destiny</a> <br> 
+			    	<a class="detail"> A new online-only first-person shooter! </a> <br> 
+			    	<a>£ </a><a class="price">35.99</a><a> Released: 9th september 2014</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/WarZ.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">War Z</a> <br> 
+			    	<a class="detail"> A post apocalyptic world is yours! </a> <br> 
+			    	<a>£ </a><a class="price">5.99</a><a> Released: 14th October 2012</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/WorldsofTanks.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">World of Tanks</a> <br> 
+			    	<a class="detail"> </a>World of Tanks is Here! <br> 
+			    	<a>£ </a><a class="price">9.99</a><a> Released: 14th October 2015</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
+			    <img src="./img/FinalFantasy.jpg">
+			    <figcaption>
+			    	
+			    	<a class="name">Final Fantasy XV</a> <br> 
+			    	<a class="detail"> action-based Final Fantasy game! </a> <br> 
+			    	<a>£ </a><a class="price">49.99</a><a> Pre order!</a> <br>
+			    	<input type="number" class="qty" value="1" />
+			    	<button class="add">Add</button>
+			    	
+			    </figcaption>
+			</figure>
+			
+			
+			
+			
+			
+		</div>
+		<!--COLUMN END-->
+		
+		<!--SHOW MORE BTN START-->
+		
+		<div class="smore">
+		    <figure>
+			    <figcaption><b>···SHOW MORE···</b></figcaption>
+			</figure>
+		</div>
+		
+		
+		
+		<!--SHOW MORE BTN END-->
+		
+		<!--FOOTER START-->
+		
+	    <div class="footer" >
+		    
+			<div class="footer-social">
+			    <li><a href="https://twitter.com/login"target="_blank"><img src="./img/twitter.png" alt="Link to Twitter"/></a></li>
+				<li><a href="https://en-gb.facebook.com/"target="_blank"><img src="./img/facebook.png" alt="Link to Twitter"/></a></li>
+				<li><a href="https://www.instagram.com/"target="_blank"><img src="./img/instagram.png" alt="Link to Twitter"/></a></li>
+			</div>
+			
+		    <div class="footer container-fluid">
+				<ul class="fnav footer-right">
+				    <li><a href="#"><span class="fnav menu"></span>About us</a></li>
+					<li><a href="#"><span class="fnav menu"></span>Team</a></li>
+					<li><a href="#"><span class="fnav menu"></span>Report</a></li>
+					<li><a href="#"><span class="fnav menu"></span>Nuclear Games 2014-2016</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<!--FOOTER END-->
+
+	</body>
+
+</html>

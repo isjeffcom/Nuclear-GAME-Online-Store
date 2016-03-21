@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	    <title>Nuclear Game Store</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/slider.css">
+		<script src="./js/jquery.js"></script>
+		<script src="./js/cart.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+
+	</head>
+	
+	<body>
+	
+	<!--NAV START-->
+
+	    <nav class="navbar navbar-inverse" >
+
+		    <div class="container-fluid">
+		        <div class = "navbar-header">
+					<a href="./index.html"><img class="logo" src="./img/logo.png" height="90px"></a>
+			    </div>
+			</div> 
+			
+			<!--div>
+			    <ul class="nav navbar-nav navbar-right">
+				    <li><a href="#"><span class="nav menu"></span>HOME</a></li>
+					<li><a href="#"><span class="nav menu"></span>CHANNELS</a></li>
+					<li><a href="#"><span class="nav menu"></span>SIGN IN</a></li>
+					<li><a href="#"><span class="nav menu"></span>SIGN UP</a></li>
+				</ul>
+			</div-->
+		</nav>
+		
+		<!--NAV END-->
+		<h1 class="infoTitle">Shipping Information Form</h1></br>
+		<form class="infoForm">
+			<div class="infoItem">
+				<h1>Your Name:</h1>
+				<input type="text" class="CName"></input>
+			</div>
+			
+			<div class="infoItem">
+				<h1>Phone Number:</h1>
+				<input type="text" class="CNumber"></input>
+			</div>
+			
+			<div class="infoItem">
+				<h1>E-Mail Address:</h1>
+				<input type="text" class="CEmail"></input>
+			</div>
+			
+			<div class="infoItem">
+				<h1>Country:</h1>
+				<input type="text" class="CCountry"></input>
+			</div>
+			
+			<div class="infoItem">
+				<h1>Billing Address:</h1>
+				<input type="text" class="CAddress"></input>
+			</div>
+			
+			<h1 class="infoTitlePay">Payment Information</h1></br></br>
+			
+			<div class="infoItem">
+				<h1>Bank Card:</h1>
+				<input type="text" class="CBankCard"></input>
+			</div>
+			<div class="infoItem">
+				<h1>Security Number:</h1>
+				<input type="password" class="Csecurity"></input>
+			</div>
+		
+		</form>
+		
+		<!--PAYPAL PAYMENT FORM START-->
+
+		
+			<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_cart">
+			<input type="hidden" name="upload" value="1">
+			<input type="hidden" name="business" value="up786100@myport.ac.uk">
+			<!-- Begin First Item -->
+			<input type="hidden" id = "ppQty_1" name="quantity_1" value="1">
+			<input type="hidden" id = "ppName_1" name="item_name_1" value="Item A">
+			<input type="hidden" name="item_number_1" value="1">
+			<input type="hidden" id = "ppAmount_1" name="amount_1" value="0.01">
+			<!-- End First Item -->
+			<!-- Begin Second Item -->
+			<input type="hidden" id = "ppQty_2" name="quantity_2" value="1">
+			<input type="hidden" id = "ppName_2" name="item_name_2" value="Test Item B">
+			<input type="hidden" name="item_number_2" value="2">
+			<input type="hidden" id = "ppAmount_2" name="amount_2" value="0.02">
+			<!-- End Second Item -->
+			<!-- Begin Third Item -->
+			<input type="hidden" id = "ppQty_3" name="quantity_3" value="1">
+			<input type="hidden" id = "ppName_3" name="item_name_3" value="Test Item C">
+			<input type="hidden" name="item_number_3" value="3">
+			<input type="hidden" id = "ppAmount_3" name="amount_3" value="0.03">
+			<!-- End Third Item -->
+			
+			<!-- Begin Third Item -->
+			<input type="hidden" id = "ppQty_4" name="quantity_4" value="1">
+			<input type="hidden" id = "ppName_4" name="item_name_4" value="Test Item C">
+			<input type="hidden" name="item_number_4" value="4">
+			<input type="hidden" id = "ppAmount_4" name="amount_4" value="0.03">
+			<!-- End Third Item -->
+			
+			<!-- Begin Third Item -->
+			<input type="hidden" id = "ppQty_5" name="quantity_5" value="1">
+			<input type="hidden" id = "ppName_5" name="item_name_5" value="Test Item C">
+			<input type="hidden" name="item_number_5" value="5">
+			<input type="hidden" id = "ppAmount_5" name="amount_5" value="0.03">
+			<!-- End Third Item -->
+			<input type="hidden"  name="currency_code" value="GBP">
+			<!--<input type="hidden" name="tax_cart" value="5.13"> -->
+			<br>
+			<input type="image" src="./img/paypal.png" border="0" name="upload" class="pppayBtn" alt="Make payments with PayPal - it's fast, free and secure!" >
+			</form>
+			<a href="./final.html"><button class="cardpayBtn">Pay by Card</button>
+		
+
+		
+		
+		
+		<!--PAYPAL PAYMENT FORM END-->
+		
+		<!--FOOTER START-->
+		
+	    <div class="footer" >
+		    
+			<div class="footer-social">
+			    <li><a href="https://twitter.com/login"target="_blank"><img src="./img/twitter.png" alt="Link to Twitter"/></a></li>
+				<li><a href="https://www.facebook.com/"target="_blank"><img src="./img/facebook.png" alt="Link to Twitter"/></a></li>
+				<li><a href="https://www.instagram.com/"target="_blank"><img src="./img/instagram.png" alt="Link to Twitter"/></a></li>
+			</div>
+			
+		    <div class="footer container-fluid">
+				<ul class="fnav footer-right">
+				    <li><a href="#"><span class="fnav menu"></span>About us</a></li>
+					<li><a href="#"><span class="fnav menu"></span>Team</a></li>
+					<li><a href="#"><span class="fnav menu"></span>Report</a></li>
+					<li><a href="#"><span class="fnav menu"></span>Nuclear Games 2014-2016</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<!--FOOTER END-->
+
+	</body>
+
+</html>
