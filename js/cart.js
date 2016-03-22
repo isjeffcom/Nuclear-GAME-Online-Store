@@ -98,6 +98,11 @@
 							return;
 						}
 					}
+					
+					if(names.length >= 5){
+						alert("You only can add 5 items to cart once");
+						return;
+					}
 				}
 				
 				//Calculate the price with quantity
