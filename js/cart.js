@@ -334,7 +334,7 @@
 		}
 
 		//User Information Function
-		$("#submit-info").click(function(){
+		$(".cardpayBtn").click(function(){
 		
 	
 			mCName = $('.CName').val();
@@ -345,13 +345,21 @@
 			mCBank = $('.CBankCard').val();
 			mCsecurity = $('.Csecurity').val();
 			
-			localStorage.setItem('user-name', JSON.stringify(mCName));
-			localStorage.setItem('user-number', JSON.stringify(mCNumber));
-			localStorage.setItem('user-email', JSON.stringify(mCEmail));
-			localStorage.setItem('user-country', JSON.stringify(mCCountry));
-			localStorage.setItem('user-address', JSON.stringify(mCAddress));
-			localStorage.setItem('user-bankcard', JSON.stringify(mCBank));
-			localStorage.setItem('User-security', JSON.stringify(mCsecurity));
+			
+			if(mCName == "" || mCNumber == "" || mCEmail == "" || mCCountry == "" || mCAddress == ""){
+				alert("You need to input your infomation");
+			} else {
+				localStorage.setItem('user-name', JSON.stringify(mCName));
+				localStorage.setItem('user-number', JSON.stringify(mCNumber));
+				localStorage.setItem('user-email', JSON.stringify(mCEmail));
+				localStorage.setItem('user-country', JSON.stringify(mCCountry));
+				localStorage.setItem('user-address', JSON.stringify(mCAddress));
+				localStorage.setItem('user-bankcard', JSON.stringify(mCBank));
+				localStorage.setItem('User-security', JSON.stringify(mCsecurity));
+				window.open("final.html");
+			}
+			
+
 				
 		});
 		
@@ -364,6 +372,7 @@
 		$("#DUA").html(userAddress);
 		$("#DUBC").html(userBankcard);
 		$("#DUSN").html("***");
+
 		
 
 		

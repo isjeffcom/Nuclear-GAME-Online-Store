@@ -1,157 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-	    <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-	    <title>Nuclear Game Store</title>
-		<link rel="stylesheet" href="./css/style.css">
-		<link rel="stylesheet" href="./css/slider.css">
-		<script src="./js/jquery.js"></script>
-		<script src="./js/cart.js"></script>
-		<script src="./js/bootstrap.min.js"></script>
 
-	</head>
-	
-	<body>
-	
-	<!--NAV START-->
+<head>
+
+  <title>Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./js/jquery.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/cart.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/slider.css">
+<!-- <link type="text/css" rel="stylesheet" href="stylesheet.css"/>		 -->
+ 
+ <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  .removeBtn {
+  	display: none;
+  }
+  </style>
+</head>
+
+
+<body>
 
 	    <nav class="navbar navbar-inverse" >
 
 		    <div class="container-fluid">
 		        <div class = "navbar-header">
-					<a href="./index.html"><img class="logo" src="./img/logo.png" height="90px"></a>
+					<img class="logo" src="./img/logo.png" height="90px">
 			    </div>
-			</div> 
+		
 			
-			<!--div>
+		<!-- 	<div>
 			    <ul class="nav navbar-nav navbar-right">
 				    <li><a href="#"><span class="nav menu"></span>HOME</a></li>
 					<li><a href="#"><span class="nav menu"></span>CHANNELS</a></li>
 					<li><a href="#"><span class="nav menu"></span>SIGN IN</a></li>
 					<li><a href="#"><span class="nav menu"></span>SIGN UP</a></li>
 				</ul>
-			</div-->
-		</nav>
-		
-		<!--NAV END-->
-		
-		<!--SLIDE START-->
-		
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		
-	        <!-- Indicators -->
-	        <ol class="carousel-indicators">
+			</div>  -->
 			
-	            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	            <li data-target="#myCarousel" data-slide-to="1"></li>
-	            <li data-target="#myCarousel" data-slide-to="2"></li>
-	            <li data-target="#myCarousel" data-slide-to="3"></li>
-				
-	        </ol>
-	
-	        <!-- Wrapper for slides -->
-	        <div class="carousel-inner" role="listbox">
+				<div class="basket">
+		    <figure>
+			    <!-- <figcaption> -->
+				<div class="cart" style="color: #fff">
 		
-	            <div class="item active">
-				
-	                <img src="./img/silder/01.jpg" alt="Chania">
-					
-	            </div>
-	
-	            <div class="item">
-				
-	                <img src="./img/silder/02.jpg" alt="Chania">
-					
-	            </div>
-	
-	            <div class="item">
-				
-	                <img src="./img/silder/03.jpg" alt="Flower">
-					
-	            </div>
-	
-	            <div class="item">
-				
-	                <img src="./img/silder/04.jpg" alt="Flower">
-					
-	            </div>
-			
-	        </div>
-	
-	        <!-- Left and right controls -->
-	        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			
-	            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				
-	        </a>
-		
-	        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			
-	            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				
-	        </a>
-		
-	    </div>
-		
+			      		<a href="./cart.html" target="_blank"><img src="./img/cart.png" height="50px"></a>
+			      				
+						
+							
+								<!--p class="cartPrice">none</p-->
+								<!--a>Total Price</a--><a class="totalPrice">£0.00</a>
+								</br>
 
-		<!--SLIDE END-->
+						
+							<!-- 	
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="C6L6D3MA964S2">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+								</form> -->
+					
+
+						</div>
 		
-		
-		
-		<!--COLUMN START-->
-		
-		<div class="columns_index">
-		    <h1>WELCOME</h1>
+              <!--   </figcaption> -->
+			</figure>
+		</div>
+			
+		</nav>
+
+<div class="container" >
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" align="center">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+     <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+	
+	<div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="./img/silder/01.jpg" alt="Assassins_Creed">
+      </div>
+	  
+
+      <div class="item">
+        <img src="./img/silder/02.jpg" alt="FPSPromotion"  >
+      </div>
+
+      <div class="item">
+        <img src="./img/silder/03.jpg" alt="MMOPromotion" >
+      </div>
+    
+      <div class="item">
+        <img src="./img/silder/04.jpg" alt="RPGPromotion" >
+      </div>
+
+ 
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only"></span>
+    </a>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+	<div class="columns" align="center">
+		    <h1>Select your chosen game genre. </h1>
 		    <br>
-		    <figure>
+			
+			
+			<figure>
+			    <a href="./mmo.html"><img src="./img/Dota.jpg" width="420px"></a>
+			    <figcaption>
+			    	
+			    	<a class="name">Mass Multiplayer Online</a> <br> 
+			    	<a class="detail"> Start your adventure here! </a> <br> 
+			    	
+			    </figcaption>
+			</figure>
+			
+			<figure>
 			    <a href="./fps.html"><img src="./img/callofdutyb2.jpeg" width="420px"></a>
-			    <figcaption> 
-			    	
-			    	<a class="name">FPS GAME</a> <br> 
-			    	
-			    </figcaption> 
-			</figure>
-			
-			<figure>
-				<a href="./mmo.html"><img src="./img/Dota.jpg" width="420px"></a>
 			    <figcaption>
 			    	
-			    	<a class="name">MMO GAME</a> <br> 
-		
+			    	<a class="name"> First Person Shooter</a> <br> 
+			    	<a class="detail"> The first expansion pack is here!</a> <br> 
+			    	
 			    </figcaption>
 			</figure>
 			
 			<figure>
-				<a href="./rpg.html"><img src="./img/destiny.jpg" width="420px"></a>
+			    <a href="./rpg.html"><img src="./img/witcher3.jpg" width="420px"></a>
 			    <figcaption>
 			    	
-			    	<a class="name">RPG GAME</a> <br> 
+			    	<a class="name">Role Playing Games</a> <br> 
+			    	<a class="detail">  </a> Join Lich King and his undead minions! <br> 
+			    	
 			    </figcaption>
 			</figure>
 		</div>
-		<!--COLUMN END-->
-		
-		<!--SHOW MORE BTN START-->
-		
-		<div class="smore">
-		    <figure>
-			    <figcaption><b>···SHOW MORE···</b></figcaption>
-			</figure>
-		</div>
-		
-		
-		
-		<!--SHOW MORE BTN END-->
-		
-		<!--FOOTER START-->
-		
-	    <div class="footer" >
+			
+			
+			
+			
+ <div class="footer">
 		    
 			<div class="footer-social">
-			    <li><a href="#"><img src="./img/twitter.png" alt="Link to Twitter"/></a></li>
-				<li><a href="#"><img src="./img/facebook.png" alt="Link to Twitter"/></a></li>
-				<li><a href="#"><img src="./img/instagram.png" alt="Link to Twitter"/></a></li>
+			    <li><a href="#"target='_blank'><img src="./img/twitter.png" alt="Link to Twitter"/></a></li>
+				<li><a href="https://www.facebook.com"target='_blank'><img src="./img/facebook.png" alt="Link to Twitter"/></a></li>
+				<li><a href="#"target='_blank'><img src="./img/instagram.png" alt="Link to Twitter"/></a></li>
 			</div>
 			
 		    <div class="footer container-fluid">
@@ -159,14 +180,14 @@
 				    <li><a href="#"><span class="fnav menu"></span>About us</a></li>
 					<li><a href="#"><span class="fnav menu"></span>Team</a></li>
 					<li><a href="#"><span class="fnav menu"></span>Report</a></li>
-					<li><a href="#"><span class="fnav menu"></span>Porthampton Broad INC. 2014-2015</a></li>
+					<li><a href="#"><span class="fnav menu"></span>Nuclear Games 2014-2016</a></li>
 				</ul>
 			</div>
 			
-		</div>
+	</div>
+		
 		
 		<!--FOOTER END-->
-
-	</body>
-
+		
+</body>
 </html>
